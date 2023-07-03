@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 class ReleasedGamesLastMonthSchema(BaseModel):
-    id_plataform: int
+    plataform_id: int
     name_plataform: str 
     slug_plataform: str
     games_count: int

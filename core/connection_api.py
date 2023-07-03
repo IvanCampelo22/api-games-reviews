@@ -1,23 +1,17 @@
 import requests
 from loguru import logger
-from decouple import config
 
-class ApiFormNps:
+class ApiGames:
     
     def __init__(self) -> None:
-        self.url_base = config('')
-        self.token = config('')
-        
-        self._headers = {
-            'Authorization' : f'Bearer {self.token}'
-        }
+        self.base_url = 'https://api.rawg.io/api'
+        self.api_key = 'b0d3d942a1d44388981df557d759d3a8'
     
     def _make_request(self, method: str, endpoints: str) -> None:
         '''O  method recebe (GET, POST, PUT, DELETE)'''
-        print(self.url_base)
         if method:
             try:
-                response = requests.request(method.upper(), f'{self.url_base}/{endpoints}', headers=self._headers)
+                response = requests.request(method.upper(), f'{self.base_url}/{endpoints}')
                 print(response.text)
             except Exception as e:
                 logger.error(f'Erro de conexão ao fazer {method} request para {endpoints}: {e}')
@@ -31,5 +25,6 @@ class ApiFormNps:
             logger.error(f"Erro ao fazer {method} pedido para {endpoints}: {response.json()} (Erro de codigo {response.status_code})")
             return response
 
-    def get_forms(self) -> None:
-        return self._make_request('GET', 'forms')
+    def get_released_last_month(self, api_key = 'b0d3d942a1d44388981df557d759d3a8') -> None:
+        response = self._make_request('GET', f'platforms?key={api_key}')
+        return response

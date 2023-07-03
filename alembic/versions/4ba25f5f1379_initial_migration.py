@@ -1,17 +1,19 @@
-"""create models for ReleasedGamesLastMonth
+"""Initial migration
 
-Revision ID: 25686094c26e
-Revises: 
-Create Date: 2023-07-02 15:08:53.186177
+Revision ID: 4ba25f5f1379
+Revises: 25686094c26e
+Create Date: 2023-07-03 15:57:47.816760
 
 """
 from alembic import op
+import sqlalchemy as sa
 from sqlalchemy import Column, INTEGER, VARCHAR
 
 
+
 # revision identifiers, used by Alembic.
-revision = '25686094c26e'
-down_revision = None
+revision = '4ba25f5f1379'
+down_revision = '25686094c26e'
 branch_labels = None
 depends_on = None
 
@@ -32,6 +34,7 @@ def upgrade() -> None:
         Column('game_name', VARCHAR, nullable=True),
 
     )
+
 
 def downgrade():
     pass
