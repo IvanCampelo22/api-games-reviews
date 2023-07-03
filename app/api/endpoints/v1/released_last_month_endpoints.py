@@ -1,31 +1,57 @@
-from fastapi import Depends, APIRouter, HTTPException
+from fastapi import Depends, APIRouter, HTTPException, status
 from sqlalchemy.orm import Session
 
-import app.models
-from app.schemas import released_last_month_schemas
-from app.controllers import released_last_month_controllers
-from database.conn import SessionLocal, engine
+from app.schemas.released_last_month_schemas import ReleasedGamesLastMonthSchema
+from app.controllers.released_last_month_controllers import ReleasedGamesLastMonthControllers
+from database.conn import async_session, engine, Base
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.future import select
+from typing import List
+from app.models.released_last_month_models import ReleasedGamesLastMonth
+from core.connection_api import ApiGames
+from database.conn import AnsyncSessionLocal
+from loguru import logger
 
 from database import conn
 
-conn.Base.metadata.create_all(bind=engine)
-
 router = APIRouter()
 
+api = ApiGames()
 
-# Dependency
-def get_db():
-    db = SessionLocal()
+@async_session
+@router.get("/released_last_month/", status_code=status.HTTP_200_OK)
+async def get_released_last_month(session: AsyncSession = Depends(conn.get_async_session)):
     try:
-        yield db
-    finally:
-        db.close()
+        query = select(ReleasedGamesLastMonth)
+        results = await session.execute(query)
+        released_last_month = results.scalars().all()
+        response = api.get_released_last_month()
+        response_json = response.json()
+        logger.info('Dados buscados na API')
 
-@router.get("/users/", response_model=list[released_last_month_schemas.ReleasedGamesLastMonthSchema])
-def read_users(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    users = released_last_month_controllers.get_users(db, skip=skip, limit=limit)
-    return users
+        for platform in response_json['results']:
+            logger.info('Inserindo dados no banco de dados')
+
+            platform_games = {
+                'plataform_id': platform['id'],
+                'name_plataform': platform['name'],
+                'slug_plataform': platform['slug'],
+                'games_count': platform['games_count'],
+                'image_background': platform['image_background'],
+                'image': platform['image'],
+                'year_start': platform['year_start'],
+                'year_end': platform['year_end'],
+            }
+
+            new_platform = ReleasedGamesLastMonth(**platform_games)
+            session.add(new_platform)
 
 
+        await session.commit()
+        logger.info('Dados inseridos com sucesso')
+        return released_last_month
 
-
+    except Exception as e:
+        print(e)
+        await session.rollback()
+        raise HTTPException(status_code=500, detail="Erro interno do servidor", )

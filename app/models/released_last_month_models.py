@@ -4,8 +4,7 @@ from sqlalchemy.orm import relationship
 from database.conn import Base
 
 
-
-class ReleasedGamesLastMonthModels(Base):
+class ReleasedGamesLastMonth(Base):
     __tablename__ = "ReleasedGamesLastMonth"
 
     plataform_id = Column(Integer, primary_key=True, index=True)
