@@ -3,10 +3,10 @@ import logging
 from loguru import logger 
 import sys
 from fastapi import FastAPI
-from form.api.routes import api_router
+from app.api.routes import api_router
 
 
-app = FastAPI(title='Form NPS')
+app = FastAPI(title='Games Reviews')
 app.include_router(api_router)
 
 logger.add("logs/logs.log",  serialize=False)
