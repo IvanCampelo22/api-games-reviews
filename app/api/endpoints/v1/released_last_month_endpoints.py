@@ -32,7 +32,7 @@ async def get_released_last_month(session: AsyncSession = Depends(conn.get_async
         for platform in response_json['results']:
             logger.info('Inserindo dados no banco de dados')
 
-            platform_games = {
+            platform_data = {
                 'plataform_id': platform['id'],
                 'name_plataform': platform['name'],
                 'slug_plataform': platform['slug'],
@@ -43,8 +43,16 @@ async def get_released_last_month(session: AsyncSession = Depends(conn.get_async
                 'year_end': platform['year_end'],
             }
 
-            new_platform = ReleasedGamesLastMonth(**platform_games)
-            session.add(new_platform)
+            for game in platform['games']:
+                game_data = {
+                    'game_id': game['id'],
+                    'game_slug': game['slug'],
+                    'game_name': game['name'],
+                }
+                platform_data.update(game_data)
+                
+                new_platform = ReleasedGamesLastMonth(**platform_data)
+                session.add(new_platform)
 
 
         await session.commit()
