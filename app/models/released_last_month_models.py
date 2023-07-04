@@ -7,7 +7,8 @@ from database.conn import Base
 class ReleasedGamesLastMonth(Base):
     __tablename__ = "ReleasedGamesLastMonth"
 
-    plataform_id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True)
+    plataform_id = Column(Integer, nullable=True)
     name_plataform = Column(String, nullable=True)
     slug_plataform = Column(String, nullable=True)
     games_count = Column(Integer, nullable=True)
