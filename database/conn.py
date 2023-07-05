@@ -2,8 +2,14 @@ from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from contextlib import asynccontextmanager
+import os
 
-SQLALCHEMY_DATABASE_URL = "postgresql+asyncpg://postgres:12345678@localhost/gamesreviews"
+USER = os.getenv('USER_GAMES')
+PASSWORD = os.getenv('PASSWORD_GAMES')
+HOST = os.getenv('HOST_GAMES')
+NAME = os.getenv('NAME_GAMES')
+
+SQLALCHEMY_DATABASE_URL = f"postgresql+asyncpg://{USER}:{PASSWORD}@{HOST}/{NAME}"
 
 
 engine = create_async_engine(

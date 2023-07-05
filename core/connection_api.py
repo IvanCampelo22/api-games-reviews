@@ -1,11 +1,15 @@
 import requests
 from loguru import logger
+import os
+
+BASE_URL = os.getenv('BASE_URL_RAWG')
+API_KEY = os.getenv('API_KEY_RAWG')
 
 class ApiGames:
     
     def __init__(self) -> None:
-        self.base_url = 'https://api.rawg.io/api'
-        self.api_key = 'b0d3d942a1d44388981df557d759d3a8'
+        self.base_url = BASE_URL
+        self.api_key = API_KEY
     
     def _make_request(self, method: str, endpoints: str) -> None:
         '''O  method recebe (GET, POST, PUT, DELETE)'''

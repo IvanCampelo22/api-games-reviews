@@ -57,7 +57,7 @@ async def get_released_last_month(session: AsyncSession = Depends(conn.get_async
 
         await session.commit()
         logger.info('Dados inseridos com sucesso')
-        return released_last_month
+        return {'message': 'Dados inseridos com sucesso'}
 
     except Exception as e:
         print(e)
