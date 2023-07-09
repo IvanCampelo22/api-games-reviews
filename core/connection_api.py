@@ -32,3 +32,7 @@ class ApiGames:
     def get_released_last_month(self, api_key = 'b0d3d942a1d44388981df557d759d3a8') -> None:
         response = self._make_request('GET', f'platforms?key={api_key}')
         return response
+    
+    def get_released_last_month_plataform(self, api_key= 'b0d3d942a1d44388981df557d759d3a8', start_date='', end_date='', plataform_id='') -> None:
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&platforms={plataform_id}&key={api_key}')
+        return response
