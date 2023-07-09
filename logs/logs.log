@@ -1011,3 +1011,19 @@
 2023-07-04 21:31:28.740 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:33 - Inserindo dados no banco de dados
 2023-07-04 21:31:28.741 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:33 - Inserindo dados no banco de dados
 2023-07-04 21:31:28.777 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:59 - Dados inseridos com sucesso
+2023-07-08 23:01:41.467 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:01:41.470 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:04:12.604 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:04:12.610 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:05:22.767 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:05:22.777 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:10:52.747 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:10:52.749 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:11:30.888 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:11:30.890 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:13:55.686 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:13:55.693 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:14:00.531 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:14:00.531 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-08 23:14:04.599 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
+2023-07-08 23:14:04.601 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados

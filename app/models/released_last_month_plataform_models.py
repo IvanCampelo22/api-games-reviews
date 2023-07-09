@@ -3,8 +3,8 @@ from sqlalchemy.orm import relationship
 
 from database.conn import Base
 
-class ReleasedLastMonthPlataform(Base):
-    __tablename__ = "ReleasedLastMonthPlataform"
+class ReleasedGamesLastMonthPlataform(Base):
+    __tablename__ = "ReleasedGamesLastMonthPlataform"
 
     id = Column(Integer, primary_key=True, index=True)
     slug_game = Column(String, nullable=True)
