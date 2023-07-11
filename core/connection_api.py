@@ -40,3 +40,7 @@ class ApiGames:
     def get_upcoming_games(self, start_date='', end_date='') -> None:
         response = self._make_request('GET', f'games?dates={start_date},{end_date}&ordering=-added&key={self.api_key}')
         return response
+    
+    def get_developers(self, developer_name) -> None:
+        response = self._make_request('GET', f'developers?search={developer_name}&page_size=1&key={self.api_key}')
+        return response
