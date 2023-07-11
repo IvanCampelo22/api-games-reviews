@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-class ReleasedGamesLastMonthSchemaMonthSchema(BaseModel):
+class UpcomingGamesSchema(BaseModel):
     id: int
     slug_game: str 
     name_game: str 
