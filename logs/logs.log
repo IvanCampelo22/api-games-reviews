@@ -1027,3 +1027,365 @@
 2023-07-08 23:14:00.531 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
 2023-07-08 23:14:04.599 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:77 - Dados buscados na API
 2023-07-08 23:14:04.601 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:80 - Inserindo dados no banco de dados
+2023-07-09 07:45:10.653 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API
+2023-07-09 07:45:10.656 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados
+2023-07-09 07:48:42.938 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 07:48:42.944 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:49:45.612 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 07:49:45.613 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:27.622 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 07:50:27.623 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.491 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 07:50:55.493 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.495 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.496 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.498 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.499 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.501 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.504 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.506 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.508 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.510 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.512 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.513 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.514 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.516 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.518 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.521 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.523 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.525 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.526 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.528 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.529 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.531 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.533 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.534 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.536 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.540 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.541 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.542 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.543 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.544 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.545 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.547 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.548 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.550 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.552 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.555 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.557 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.559 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.561 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.562 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.565 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.567 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.569 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.570 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.572 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.574 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.575 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.575 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.576 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.577 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 07:50:55.599 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-09 08:17:25.333 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 08:17:25.348 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.350 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.351 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.352 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.353 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.354 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.355 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.358 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.360 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.362 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.364 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.366 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.367 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.368 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.369 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.371 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.372 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.374 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.375 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.377 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.380 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.382 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.383 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.384 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.385 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.386 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.387 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.388 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.390 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.392 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.393 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.396 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.397 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.398 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.400 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.401 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.404 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.405 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.408 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.410 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.412 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.414 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.416 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.417 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.418 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.420 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.421 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.422 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.424 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.427 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-09 08:17:25.452 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-09 08:23:08.571 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-09 08:23:08.574 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 18:52:35.218 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 18:52:35.225 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 18:54:51.810 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 18:54:51.814 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 18:58:50.203 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 18:58:50.205 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:07:42.381 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:07:42.385 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:30:17.009 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:30:17.013 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:31:17.579 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:25 - Dados buscados na API
+2023-07-10 19:31:17.586 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.590 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.593 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.595 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.597 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.598 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.599 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.601 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.603 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.606 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.608 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.609 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.611 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.612 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.613 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.614 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.615 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.616 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.617 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.619 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.620 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.622 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.625 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.626 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.627 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.628 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.629 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.630 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.631 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.632 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.632 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.633 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.634 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.635 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.637 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.639 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.642 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.642 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.643 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.644 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.645 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.645 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.646 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.647 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.648 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.648 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.649 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.650 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.652 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.653 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-10 19:31:17.702 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:54 - Dados inseridos com sucesso
+2023-07-10 19:31:47.158 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:31:47.160 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:34:29.307 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:34:29.308 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.308 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.308 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.309 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.309 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.309 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.310 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.310 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.310 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.311 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.311 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.312 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.313 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.313 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.314 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.314 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.315 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.315 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.315 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.316 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:29.331 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:34:41.962 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:34:41.963 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.964 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.964 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.965 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.966 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.967 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.967 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.967 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.967 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.968 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.968 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.968 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.968 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.969 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.969 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.969 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.970 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.970 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.970 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.970 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:34:41.979 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:35:37.813 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:35:37.815 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.815 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.815 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.816 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.816 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.816 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.817 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.817 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.817 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.817 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.818 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.818 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.818 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.818 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.819 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.819 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.819 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.819 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.820 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.820 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:35:37.833 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:36:01.768 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:36:01.770 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.771 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.773 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.775 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.776 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.780 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.782 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.784 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.785 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.786 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.787 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.788 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.789 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.792 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.793 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.797 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.799 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.800 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.801 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.803 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:01.831 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:36:24.189 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:36:24.191 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.193 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.194 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.194 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.195 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.197 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.197 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.197 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.198 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.198 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.198 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.199 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.199 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.199 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.200 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.200 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.200 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.200 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.201 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.201 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 19:36:24.209 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:43:03.824 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:43:03.829 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 19:44:38.759 | ERROR    | core.connection_api:_make_request:29 - Erro ao fazer GET pedido para games?dates=2019-09-30,&platforms=18,1,7&key=2019-09-01: {'error': 'The API key is not found'} (Erro de codigo 401)
+2023-07-10 19:44:38.760 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:45:16.336 | ERROR    | core.connection_api:_make_request:29 - Erro ao fazer GET pedido para games?dates=2019-09-30,&platforms=18,1,7&key=2019-09-01: {'error': 'The API key is not found'} (Erro de codigo 401)
+2023-07-10 19:45:16.337 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 19:46:17.371 | ERROR    | core.connection_api:_make_request:29 - Erro ao fazer GET pedido para games?dates=2019-09-30,&platforms=18,1,7&key=2019-09-01: {'error': 'The API key is not found'} (Erro de codigo 401)
+2023-07-10 19:46:17.372 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 21:24:28.983 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 21:24:28.985 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.986 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.987 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.988 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.989 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.990 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.991 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.992 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.993 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.994 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.995 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.996 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.997 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.998 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:28.999 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.000 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.001 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.002 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.002 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.003 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:24:29.018 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 21:25:50.765 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 21:25:50.766 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.767 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.769 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.770 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.772 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.774 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.775 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.777 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.779 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.781 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.783 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.784 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.786 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.787 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.789 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.791 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.793 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.794 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.797 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.799 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:25:50.823 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:46 - Dados inseridos com sucesso
+2023-07-10 21:27:45.337 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-10 21:27:45.339 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.340 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.342 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.343 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.344 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.346 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.347 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.349 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.352 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.355 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.356 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.358 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.358 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.359 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.360 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.360 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.361 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.362 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.363 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.364 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-10 21:27:45.378 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:55 - Dados inseridos com sucesso
