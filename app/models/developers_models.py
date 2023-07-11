@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from database.conn import Base
 
 class Developers(Base):
-    __tablename__ = "developers"
+    __tablename__ = "Developers"
 
     id = Column(Integer, primary_key=True, index=True)
     developer_id = Column(Integer, nullable=True)
