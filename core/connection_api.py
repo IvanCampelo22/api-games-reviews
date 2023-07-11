@@ -29,10 +29,14 @@ class ApiGames:
             logger.error(f"Erro ao fazer {method} pedido para {endpoints}: {response.json()} (Erro de codigo {response.status_code})")
             return response
 
-    def get_released_last_month(self, api_key = 'b0d3d942a1d44388981df557d759d3a8') -> None:
-        response = self._make_request('GET', f'platforms?key={api_key}')
+    def get_released_last_month(self) -> None:
+        response = self._make_request('GET', f'platforms?key={self.api_key}')
         return response
     
-    def get_released_last_month_plataform(self, api_key= 'b0d3d942a1d44388981df557d759d3a8', start_date='', end_date='', plataform_id='') -> None:
-        response = self._make_request('GET', f'games?dates={start_date},{end_date}&platforms={plataform_id}&key={api_key}')
+    def get_released_last_month_plataform(self, start_date='', end_date='', plataform_id='') -> None:
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&platforms={plataform_id}&key={self.api_key}')
+        return response
+    
+    def get_upcoming_games(self, start_date='', end_date='') -> None:
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&ordering=-added&key={self.api_key}')
         return response
