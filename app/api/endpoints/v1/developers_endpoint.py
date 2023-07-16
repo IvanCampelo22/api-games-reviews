@@ -34,7 +34,6 @@ async def get_developers(session: AsyncSession = Depends(conn.get_async_session)
                 'exact_name': developer['exact_name'],
                 'search_name': developer['search_name'],
                 'developer_slug': developer['slug'],
-                'top_games': developer['top_games'],
                 'games_count': developer['games_count'],
                 'image_background': developer['image_background'],
                 'score': developer['score']

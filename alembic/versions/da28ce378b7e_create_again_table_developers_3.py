@@ -1,8 +1,8 @@
-"""create table for Developers
+"""create again table Developers 3
 
-Revision ID: 647f5736e201
-Revises: 74b1c52a3995
-Create Date: 2023-07-11 08:27:26.629130
+Revision ID: da28ce378b7e
+Revises: 4e0321603521
+Create Date: 2023-07-16 09:56:06.155899
 
 """
 from alembic import op
@@ -10,14 +10,14 @@ from sqlalchemy import Column, INTEGER, VARCHAR, JSON
 
 
 # revision identifiers, used by Alembic.
-revision = '647f5736e201'
-down_revision = '74b1c52a3995'
+revision = 'da28ce378b7e'
+down_revision = '4e0321603521'
 branch_labels = None
 depends_on = None
 
 
 def upgrade():
-    op.create_table(
+        op.create_table(
         'Developers',
         Column('id', INTEGER, primary_key=True, autoincrement=True),
         Column('developer_id', INTEGER, nullable=True),
@@ -31,6 +31,7 @@ def upgrade():
         Column('image_background', VARCHAR, nullable=True),
         Column('score', VARCHAR, nullable=True),
     )
+
 
 
 def downgrade():

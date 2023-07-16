@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
+from sqlalchemy import Column, Integer, String, JSON
 from database.conn import Base
 
 class Developers(Base):
@@ -11,7 +11,7 @@ class Developers(Base):
     exact_name = Column(String, nullable=True)
     search_name = Column(String, nullable=True)
     developer_slug = Column(String, nullable=True)
-    top_games = Column(String, nullable=True)
+    top_games = Column(JSON, nullable=True)
     games_count = Column(Integer, nullable=True)
     image_background = Column(String, nullable=True)
     score = Column(String, nullable=True)
