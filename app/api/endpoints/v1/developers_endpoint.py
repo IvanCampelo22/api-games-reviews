@@ -15,7 +15,7 @@ api = ApiGames()
 
 @async_session
 @router.get("/developers/", status_code=status.HTTP_200_OK)
-async def get_developers(session: AsyncSession = Depends(conn.get_async_session), developer_name = str):
+async def get_developers(session: AsyncSession = Depends(conn.get_async_session), developer_name: str = ''):
     try:       
         query = select(Developers)
         results = await session.execute(query)
@@ -42,7 +42,6 @@ async def get_developers(session: AsyncSession = Depends(conn.get_async_session)
 
             new_developer = Developers(**developer_data)
             session.add(new_developer)
-
 
         await session.commit()
         logger.info('Dados inseridos com sucesso')
