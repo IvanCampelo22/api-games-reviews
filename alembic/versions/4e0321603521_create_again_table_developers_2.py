@@ -1,17 +1,18 @@
-"""create table for Developers
+"""create again table Developers 2
 
-Revision ID: 647f5736e201
-Revises: 74b1c52a3995
-Create Date: 2023-07-11 08:27:26.629130
+Revision ID: 4e0321603521
+Revises: e762029401ee
+Create Date: 2023-07-16 09:50:35.276857
 
 """
 from alembic import op
 from sqlalchemy import Column, INTEGER, VARCHAR, JSON
 
 
+
 # revision identifiers, used by Alembic.
-revision = '647f5736e201'
-down_revision = '74b1c52a3995'
+revision = '4e0321603521'
+down_revision = 'e762029401ee'
 branch_labels = None
 depends_on = None
 

@@ -58,4 +58,4 @@ async def get_released_last_month(session: AsyncSession = Depends(conn.get_async
     except Exception as e:
         print(e)
         await session.rollback()
-        raise HTTPException(status_code=500, detail="Erro interno do servidor", )
+        raise HTTPException(status_code=500, detail="Erro interno do servidor")

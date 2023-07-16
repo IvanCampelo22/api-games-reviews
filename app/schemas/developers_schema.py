@@ -8,7 +8,7 @@ class DevelopersSchema(BaseModel):
     exact_name: str
     search_name: str
     developer_slug: str
-    top_games: int
+    top_games: list
     games_count: int
     image_background: str
     score: str
