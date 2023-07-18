@@ -12,7 +12,6 @@ class DevelopersWithId(Base):
     plataform_slug = Column(String, nullable=True)
     store_id = Column(Integer, nullable=True)
     store_name = Column(String, nullable=True)
-    store_name = Column(String, nullable=True)
     released_game = Column(Date, nullable=True)
     tba_game = Column(Boolean, nullable=True)
     background_image_game = Column(String, nullable=True)
@@ -60,4 +59,3 @@ class DevelopersWithId(Base):
     genres_id = Column(Integer, nullable=True)
     genres_name = Column(String, nullable=True)
     genres_slug = Column(String, nullable=True)
-    
