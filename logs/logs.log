@@ -1559,3 +1559,6 @@ HINT:  You will need to rewrite or cast the expression.
 2023-07-16 09:33:05.799 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:25 - Dados buscados na API
 2023-07-16 09:33:05.800 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:28 - Inserindo dados no banco de dados
 2023-07-16 09:33:05.826 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:46 - Dados inseridos com sucesso
+2023-07-16 09:58:32.995 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:25 - Dados buscados na API
+2023-07-16 09:58:32.996 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:28 - Inserindo dados no banco de dados
+2023-07-16 09:58:33.024 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:47 - Dados inseridos com sucesso
