@@ -9,7 +9,7 @@ client = TestClient(app)
 
 API_KEY = os.getenv("API_KEY_RAWG")
 
-def test_released_last_month_endpoint():
+def test_released_last_month_message():
 
     response = client.get(f"games/released-last-month-pataform?key={API_KEY}")
 
