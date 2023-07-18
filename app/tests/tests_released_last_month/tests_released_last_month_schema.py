@@ -17,9 +17,25 @@ def test_valid_released_games_last_month_schema():
         "game_id": 1,
         "game_slug": "Resident Evil",
         "game_name": "resident evil"
-
-
-
     }
 
     assert ReleasedGamesLastMonthSchema(**data)
+
+def test_invalid_released_games_last_month_without_field_schema():
+    invalid_data = {
+        "plataform_id": 1,
+        "name_plataform": "PC",
+        "slug_plataform": "Pc",
+        "games_count": 10,
+        "image_backgroud": "image_background",
+        "image": "image_test",
+        "year_start": 1,
+        "year_end": 1,
+        "game_id": 1,
+        "game_slug": "Resident Evil",
+        "game_name": "resident evil"
+    }
+
+    with pytest.raises(ValidationError):
+        ReleasedGamesLastMonthSchema(**invalid_data)
+
