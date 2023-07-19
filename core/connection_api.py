@@ -1,6 +1,8 @@
 import requests
 from loguru import logger
 import os
+import json
+
 
 BASE_URL = os.getenv('BASE_URL_RAWG')
 API_KEY = os.getenv('API_KEY_RAWG')
@@ -46,5 +48,9 @@ class ApiGames:
         return response
 
     def get_developers_with_id(self, start_date='', end_date='', developer_id='') -> None: 
-        response = self._make_request('GET', f'https://api.rawg.io/api/games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
-        return response 
+        try: 
+            response = self._make_request('GET', f'https://api.rawg.io/api/games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
+            return response 
+        except Exception as e:
+            logger.error(f'Erro ao chamar a requisição: {e}')
+            return {'message': f'Erro ao chamar a requisição {e}'}
