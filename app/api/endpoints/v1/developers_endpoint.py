@@ -20,7 +20,7 @@ async def get_developers(session: AsyncSession = Depends(conn.get_async_session)
         query = select(Developers)
         results = await session.execute(query)
         developers = results.scalars().all()
-        response = api.get_developers(developer_name)
+        response = api.get_developers(developer_name=developer_name)
         response_json = response.json()
         logger.info('Dados buscados na API')
 

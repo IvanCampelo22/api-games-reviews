@@ -1562,3 +1562,143 @@ HINT:  You will need to rewrite or cast the expression.
 2023-07-16 09:58:32.995 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:25 - Dados buscados na API
 2023-07-16 09:58:32.996 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:28 - Inserindo dados no banco de dados
 2023-07-16 09:58:33.024 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:47 - Dados inseridos com sucesso
+2023-07-18 07:38:47.763 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:48 - Erro ao inserir dados: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.UndefinedColumnError'>: column DevelopersWithId.tba_game does not exist
+HINT:  Perhaps you meant to reference the column "DevelopersWithId.tb_game".
+[SQL: SELECT "DevelopersWithId".id, "DevelopersWithId".slug_game, "DevelopersWithId".name_game, "DevelopersWithId".playtime, "DevelopersWithId".plataform_id, "DevelopersWithId".plataform_name, "DevelopersWithId".plataform_slug, "DevelopersWithId".store_id, "DevelopersWithId".store_name, "DevelopersWithId".released_game, "DevelopersWithId".tba_game, "DevelopersWithId".background_image_game, "DevelopersWithId".rating_game, "DevelopersWithId".rating_top_game, "DevelopersWithId".ratings_id, "DevelopersWithId".ratings_title, "DevelopersWithId".ratings_counts, "DevelopersWithId".ratings_percent, "DevelopersWithId".ratings_count, "DevelopersWithId".reviews_text_count, "DevelopersWithId".added, "DevelopersWithId".yet_add_by_status, "DevelopersWithId".owned_add_by_status, "DevelopersWithId".beaten_add_by_status, "DevelopersWithId".toplay_add_by_status, "DevelopersWithId".dropped_add_by_status, "DevelopersWithId".playing_add_by_status, "DevelopersWithId".metacritic, "DevelopersWithId".suggestions_count, "DevelopersWithId".updated, "DevelopersWithId".metacritic_id, "DevelopersWithId".metacritic_score, "DevelopersWithId".clip, "DevelopersWithId".tags_metacritic_id, "DevelopersWithId".tags_metacritic_name, "DevelopersWithId".tags_metacritic_slug, "DevelopersWithId".tags_metacritic_language, "DevelopersWithId".tags_games_count, "DevelopersWithId".tags_image_background, "DevelopersWithId".esrb_rating_id, "DevelopersWithId".esrb_rating_name, "DevelopersWithId".esrb_rating_slug, "DevelopersWithId".esrb_rating_name_en, "DevelopersWithId".esrb_rating_name_ru, "DevelopersWithId".user_game, "DevelopersWithId".reviews_count, "DevelopersWithId".saturated_color, "DevelopersWithId".dominant_color, "DevelopersWithId".short_screenshots_id, "DevelopersWithId".short_screenshots_image, "DevelopersWithId".parent_plataforms_id, "DevelopersWithId".parent_plataforms_name, "DevelopersWithId".parent_plataforms_slug, "DevelopersWithId".genres_id, "DevelopersWithId".genres_name, "DevelopersWithId".genres_slug 
+FROM "DevelopersWithId"]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-07-18 07:41:22.893 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:48 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 07:45:01.484 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:25 - Dados buscados na API
+2023-07-18 07:45:01.486 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:28 - Inserindo dados no banco de dados
+2023-07-18 07:45:01.518 | INFO     | app.api.endpoints.v1.developers_endpoint:get_developers:47 - Dados inseridos com sucesso
+2023-07-18 07:45:21.715 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:48 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 08:00:09.726 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 08:00:58.875 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 08:02:30.422 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 08:03:34.415 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:29:23.715 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:29:57.762 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:31:24.544 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:32:03.590 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:40:00.034 | ERROR    | core.connection_api:get_developers_with_id:53 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:40:00.042 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:42:12.817 | ERROR    | core.connection_api:get_developers_with_id:58 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:42:12.820 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:42:51.646 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:42:51.649 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:43:31.384 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:43:31.387 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:44:18.490 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:44:18.496 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:44:56.175 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:44:56.178 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:45:03.752 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:45:03.758 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:48:21.792 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:48:21.799 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:51:16.485 | ERROR    | core.connection_api:get_developers_with_id:58 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:51:16.495 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:52:35.132 | ERROR    | core.connection_api:get_developers_with_id:61 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:52:35.138 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:54:49.626 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:54:49.631 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:55:30.951 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:55:30.954 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 10:58:01.378 | ERROR    | core.connection_api:get_developers_with_id:55 - Erro ao chamar a requisição: Expecting value: line 1 column 1 (char 0)
+2023-07-18 10:58:01.383 | ERROR    | app.api.endpoints.v1.developers_with_id_endpoint:developers_with_id:46 - Erro ao inserir dados: 'dict' object has no attribute 'json'
+2023-07-18 11:30:39.795 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-18 11:30:39.801 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.805 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.808 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.809 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.810 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.811 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.812 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.813 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.814 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.817 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.820 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.827 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.828 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.829 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.830 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.832 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.834 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.836 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.838 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.840 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:30:39.878 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:55 - Dados inseridos com sucesso
+2023-07-18 11:34:18.944 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:31 - Dados buscados na API ReleasedLastMonthPlataform
+2023-07-18 11:34:18.949 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.954 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.955 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.956 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.959 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.961 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.963 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.965 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.967 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.969 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.971 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.975 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.977 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.978 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.980 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.982 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.984 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.985 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.986 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:18.986 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:34 - Inserindo dados no banco de dados ReleasedLastMonthPlataform
+2023-07-18 11:34:19.005 | INFO     | app.api.endpoints.v1.released_last_month_plataform_endpoints:get_released_last_month:55 - Dados inseridos com sucesso
+2023-07-18 11:58:16.076 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:25 - Dados buscados na API
+2023-07-18 11:58:16.078 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.092 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.097 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.108 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.113 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.120 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.124 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.126 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.127 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.128 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.129 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.130 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.131 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.132 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.133 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.135 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.136 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.138 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.139 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.142 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.143 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.143 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.144 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.145 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.146 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.147 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.148 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.148 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.149 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.149 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.151 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.153 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.154 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.155 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.158 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.159 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.159 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.160 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.160 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.161 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.161 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.162 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.163 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.163 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.165 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.166 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.166 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.167 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.168 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.168 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:28 - Inserindo dados no banco de dados
+2023-07-18 11:58:16.215 | INFO     | app.api.endpoints.v1.released_last_month_endpoints:get_released_last_month:54 - Dados inseridos com sucesso
