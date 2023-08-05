@@ -20,7 +20,7 @@
 
 > pip install -r requirements.txt
 
-4. Vá até a raiz do projeto e inicie o servidor
+4. Vá até a raiz do projeto, onde tem o arquivo main.py, e inicie o servidor
 
 >  uvicorn main:app --reload
 
