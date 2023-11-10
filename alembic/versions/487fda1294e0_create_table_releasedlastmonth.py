@@ -1,8 +1,8 @@
-"""torn nullable in True
+"""create table ReleasedLastMonth
 
-Revision ID: 8b182bb84545
-Revises: 845544813625
-Create Date: 2023-07-04 16:22:51.319351
+Revision ID: 487fda1294e0
+Revises: 
+Create Date: 2023-08-05 19:09:35.494512
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '8b182bb84545'
-down_revision = '845544813625'
+revision = '487fda1294e0'
+down_revision = None
 branch_labels = None
 depends_on = None
 

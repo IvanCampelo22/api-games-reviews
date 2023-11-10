@@ -10,21 +10,16 @@ from loguru import logger
 from database import conn
 
 router = APIRouter()
-
 api = ApiGames()
 
 @async_session
 @router.get("/developers/", status_code=status.HTTP_200_OK)
 async def get_developers(session: AsyncSession = Depends(conn.get_async_session), developer_name: str = ''):
     try:       
-        query = select(Developers)
-        results = await session.execute(query)
-        developers = results.scalars().all()
-        response = api.get_developers(developer_name)
-        response_json = response.json()
+        response = api.get_developers(developer_name).json()
         logger.info('Dados buscados na API')
 
-        for developer in response_json['results']:
+        for developer in response['results']:
             logger.info('Inserindo dados no banco de dados')
 
             developer_data = {
@@ -45,7 +40,7 @@ async def get_developers(session: AsyncSession = Depends(conn.get_async_session)
 
         await session.commit()
         logger.info('Dados inseridos com sucesso')
-        return {'message': 'Dados inseridos com sucesso'}
+        return new_developer
     
     except Exception as e:
         await session.rollback()

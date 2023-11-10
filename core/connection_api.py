@@ -42,9 +42,9 @@ class ApiGames:
         return response
     
     def get_developers(self, developer_name) -> None:
-        response = self._make_request('GET', f'developers?search={developer_name}&page_size=1&key={self.api_key}')
+        response = self._make_request('GET', f'developers?search={developer_name}&page_size=10&key={self.api_key}')
         return response
 
     def get_developers_with_id(self, start_date='', end_date='', developer_id='') -> None: 
-        response = self._make_request('GET', f'https://api.rawg.io/api/games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
         return response 
