@@ -1,30 +1,25 @@
 from fastapi import Depends, APIRouter, HTTPException, status
 
-from database.conn import async_session
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from app.models.released_last_month_models import ReleasedGamesLastMonth
-from core.connection_api import ApiGames
 from loguru import logger
 
+from app.models.released_last_month_models import ReleasedGamesLastMonth
+from app.auth.auth_bearer import JWTBearer
+from core.connection_api import ApiGames
 from database import conn
+from database.conn import async_session
 
 router = APIRouter()
-
 api = ApiGames()
 
 @async_session
-@router.get("/released-last-month/", status_code=status.HTTP_200_OK)
+@router.get("/released-last-month/", dependencies=[Depends(JWTBearer())], status_code=status.HTTP_200_OK)
 async def get_released_last_month(session: AsyncSession = Depends(conn.get_async_session)):
     try:
-        query = select(ReleasedGamesLastMonth)
-        results = await session.execute(query)
-        released_last_month = results.scalars().all()
-        response = api.get_released_last_month()
-        response_json = response.json()
+        response = api.get_released_last_month().json()
         logger.info('Dados buscados na API')
 
-        for platform in response_json['results']:
+        for platform in response['results']:
             logger.info('Inserindo dados no banco de dados')
 
             platform_data = {

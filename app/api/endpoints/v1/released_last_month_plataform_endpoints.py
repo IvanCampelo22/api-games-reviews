@@ -1,36 +1,25 @@
 from fastapi import Depends, APIRouter, HTTPException, status
-from sqlalchemy.orm import Session
 
-from app.schemas.released_last_month_schemas import ReleasedGamesLastMonthSchema
-from database.conn import async_session, engine, Base
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from typing import List
-from app.models.released_last_month_models import ReleasedGamesLastMonth
-from app.models.released_last_month_plataform_models import ReleasedGamesLastMonthPlataform
-from core.connection_api import ApiGames
-from database.conn import AnsyncSessionLocal
 from loguru import logger
 
+from app.auth.auth_bearer import JWTBearer
+from app.models.released_last_month_plataform_models import ReleasedGamesLastMonthPlataform
+from core.connection_api import ApiGames
 from database import conn
+from database.conn import async_session
 
 router = APIRouter()
-
 api = ApiGames()
 
-
 @async_session
-@router.get("/released-last-month-pataform/", status_code=status.HTTP_200_OK)
+@router.get("/released-last-month-pataform/", dependencies=[Depends(JWTBearer())], status_code=status.HTTP_200_OK)
 async def get_released_last_month(session: AsyncSession = Depends(conn.get_async_session), start_date: str = '', end_date: str = '', plataform_id: str = ''):
     try:
-        query = select(ReleasedGamesLastMonthPlataform)
-        results = await session.execute(query)
-        released_last_month_plataform = results.scalars().all()
-        response = api.get_released_last_month_plataform(start_date=start_date, end_date=end_date, plataform_id=plataform_id)
-        response_json = response.json()
+        response = api.get_released_last_month_plataform(start_date=start_date, end_date=end_date, plataform_id=plataform_id).json()
         logger.info('Dados buscados na API ReleasedLastMonthPlataform')
 
-        for game in response_json['results']:
+        for game in response['results']:
             logger.info('Inserindo dados no banco de dados ReleasedLastMonthPlataform')    
 
             game_data = {
@@ -53,7 +42,7 @@ async def get_released_last_month(session: AsyncSession = Depends(conn.get_async
             
         await session.commit()
         logger.info('Dados inseridos com sucesso')
-        return released_last_month_plataform
+        return {'message': 'dados inseridos com sucesso'}
 
     except Exception as e:
         print(e)

@@ -1,30 +1,24 @@
 from fastapi import Depends, APIRouter, HTTPException, status
-from database.conn import async_session
 from sqlalchemy.ext.asyncio import AsyncSession
-from sqlalchemy.future import select
-from core.connection_api import ApiGames
 from loguru import logger
-from app.models.upcoming_games_models import UpcomingGames
 
+from core.connection_api import ApiGames
+from app.models.upcoming_games_models import UpcomingGames
 from database import conn
+from database.conn import async_session
 
 router = APIRouter()
-
 api = ApiGames()
-
 
 @async_session
 @router.get("/upcoming-games/", status_code=status.HTTP_200_OK)
 async def upcoming_games(session: AsyncSession = Depends(conn.get_async_session), start_date: str = '', end_date: str = ''):
     try:
-        query = select(UpcomingGames)
-        results = await session.execute(query)
-        released_last_month_plataform = results.scalars().all()
-        response = api.get_upcoming_games(start_date=start_date, end_date=end_date)
-        response_json = response.json()
+        
+        response = api.get_upcoming_games(start_date=start_date, end_date=end_date).json()
         logger.info('Dados buscados na API')
 
-        for game in response_json['results']:
+        for game in response['results']:
             logger.info('Inserindo dados no banco de dados')    
 
             game_data = {
@@ -47,7 +41,7 @@ async def upcoming_games(session: AsyncSession = Depends(conn.get_async_session)
             
         await session.commit()
         logger.info('Dados inseridos com sucesso')
-        return released_last_month_plataform
+        return {'message': 'dados inseridos com sucesso'}
 
     except Exception as e:
         print(e)
