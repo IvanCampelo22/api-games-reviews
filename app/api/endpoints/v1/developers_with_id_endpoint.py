@@ -20,23 +20,27 @@ async def developers_with_id(session: AsyncSession = Depends(conn.get_async_sess
     try:
         query = select(DevelopersWithId)
         results = await session.execute(query)
+        logger.info(results)
         devs_with_id =  results.scalars().all()
         response = api.get_developers_with_id(start_date=start_date, end_date=end_date, developer_id=developer_id)
-        response_json = response.json()
+        response_json = json.dumps(response)
+        response_data = json.loads(response_json)
         logger.info("Dados buscados na api")
 
-        for game in response_json['results']:
-            logger.info("Inserindo no banco de dados")
+        if 'results' in response_data:
+            for game in response_data['results']:
+                logger.info("Inserindo no banco de dados")
 
-            games_data = {
-                'slug_game': game['slug'],
-                'name_game': game['name'],
-                'playtime': game['playtime']
+                games_data = {
+                    'slug_game': game['slug'],
+                    'name_game': game['name'],
+                    'playtime': game['playtime']
+                }
 
-            }
-
-            new_developer_with_id = DevelopersWithId(**games_data)
-            session.add(new_developer_with_id)
+                new_developer_with_id = DevelopersWithId(**games_data)
+                session.add(new_developer_with_id)
+        else:
+            logger.warning("A chave 'results' não existe na resposta da API.")
 
         await session.commit()
         logger.info('Dados inseridos com sucesso')

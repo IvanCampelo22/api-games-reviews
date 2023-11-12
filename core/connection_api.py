@@ -1,6 +1,8 @@
 import requests
 from loguru import logger
 import os
+import json
+
 
 BASE_URL = os.getenv('BASE_URL_RAWG')
 API_KEY = os.getenv('API_KEY_RAWG')
