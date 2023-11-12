@@ -1,23 +1,21 @@
 import requests
 from loguru import logger
-from decouple import config
+import os
 
-class ApiFormNps:
+BASE_URL = os.getenv('BASE_URL_RAWG')
+API_KEY = os.getenv('API_KEY_RAWG')
+
+class ApiGames:
     
     def __init__(self) -> None:
-        self.url_base = config('')
-        self.token = config('')
-        
-        self._headers = {
-            'Authorization' : f'Bearer {self.token}'
-        }
+        self.base_url = BASE_URL
+        self.api_key = API_KEY
     
     def _make_request(self, method: str, endpoints: str) -> None:
         '''O  method recebe (GET, POST, PUT, DELETE)'''
-        print(self.url_base)
         if method:
             try:
-                response = requests.request(method.upper(), f'{self.url_base}/{endpoints}', headers=self._headers)
+                response = requests.request(method.upper(), f'{self.base_url}/{endpoints}')
                 print(response.text)
             except Exception as e:
                 logger.error(f'Erro de conexão ao fazer {method} request para {endpoints}: {e}')
@@ -31,5 +29,22 @@ class ApiFormNps:
             logger.error(f"Erro ao fazer {method} pedido para {endpoints}: {response.json()} (Erro de codigo {response.status_code})")
             return response
 
-    def get_forms(self) -> None:
-        return self._make_request('GET', 'forms')
+    def get_released_last_month(self) -> None:
+        response = self._make_request('GET', f'platforms?key={self.api_key}')
+        return response
+    
+    def get_released_last_month_plataform(self, start_date='', end_date='', plataform_id='') -> None:
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&platforms={plataform_id}&key={self.api_key}')
+        return response
+    
+    def get_upcoming_games(self, start_date='', end_date='') -> None:
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&ordering=-added&key={self.api_key}')
+        return response
+    
+    def get_developers(self, developer_name) -> None:
+        response = self._make_request('GET', f'developers?search={developer_name}&page_size=10&key={self.api_key}')
+        return response
+
+    def get_developers_with_id(self, start_date='', end_date='', developer_id='') -> None: 
+        response = self._make_request('GET', f'games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
+        return response 
