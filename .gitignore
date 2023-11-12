@@ -130,13 +130,6 @@ venv/
 *.jpeg
 
 # JSON 
-dados_games_console.json
-dados_games_list.json 
-dados_games_year_1999.json 
-dados_games_year.json 
-dados_games.json 
+*.json
+
 teste.py
-plataform_with_id.json 
-upcoming_games.json
-developers.json
-developers_espc.json

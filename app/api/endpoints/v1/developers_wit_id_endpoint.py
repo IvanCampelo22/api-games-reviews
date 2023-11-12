@@ -13,15 +13,19 @@ router = APIRouter()
 api = ApiGames()
 
 @async_session
-@router.get("/developers_with_id/", dependencies=[Depends(JWTBearer())],status_code=status.HTTP_200_OK)
+@router.get("/developers_with_id/",status_code=status.HTTP_200_OK)
 async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_session), start_date: str = '', end_date: str = '', developer_id: str = ''):
     try:
         response = api.get_developers_with_id(start_date=start_date, end_date=end_date, developer_id=developer_id).json()
         if response and 'results' in response:
-            logger.info(f'Response from API: {response}')
+            logger.info(f'Response from API: ')
 
-            for developer in response['results'] if 'results' in response else None:
-                logger.info(f'Developer data: {developer}')
+            for developer in response['results']:
+                logger.info(f'Developer data:')
+
+                if developer['esrb_rating'] is None: 
+                    developer['esrb_rating'] = {}
+                    
 
                 developer_with_id_data = {
                     'slug_game': developer['slug'] if 'slug' in developer else None,
@@ -45,12 +49,12 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
                     'updated': developer['updated'] if 'updated' in developer else None,
                     'metacritic_id': developer['id'] if 'id' in developer else None,
                     'metacritic_score': developer['score'] if 'score' in developer else None,
-                    'clip': developer['clip'] if 'clip' in developer else None,
-                    'esrb_rating_id': developer['esrb_rating']['id'] if 'id' in developer['esrb_rating'] else None,
-                    'esrb_rating_name': developer['esrb_rating']['name'] if 'name' in developer['esrb_rating'] else None,
-                    'esrb_rating_slug': developer['esrb_rating']['slug'] if 'slug' in developer['esrb_rating'] else None,
-                    'esrb_rating_name_en': developer['esrb_rating']['name_en'] if 'name_en' in developer['esrb_rating'] else None,
-                    'esrb_rating_name_ru': developer['esrb_rating']['name_ru'] if 'name_ru' in developer['esrb_rating'] else None,
+                    'clip': developer['clip'] if 'clip' in developer else None, 
+                    'esrb_rating_id': developer['esrb_rating']['id'] if 'esrb_rating' in developer and 'id' in developer['esrb_rating'] and developer['esrb_rating'] is not None else None,
+                    'esrb_rating_name': developer['esrb_rating']['name'] if 'name' in developer['esrb_rating'] else 'Vazio',
+                    'esrb_rating_slug': developer['esrb_rating']['slug'] if 'slug' in developer['esrb_rating'] else 'Vazio',
+                    'esrb_rating_name_en': developer['esrb_rating']['name_en'] if 'name_en' in developer['esrb_rating'] else 'Vazio',
+                    'esrb_rating_name_ru': developer['esrb_rating']['name_ru'] if 'name_ru' in developer['esrb_rating'] else 'Vazio',
                     'user_game': developer['user_game'] if 'user_game' in developer else None,
                     'reviews_count': developer['reviews_count'] if 'reviews_count' in developer else None,
                     'saturated_color': developer['saturated_color'] if 'saturated_color' in developer else None,
@@ -58,7 +62,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                 }
 
-                for plataforms in developer['platforms'] if plataforms in developer else None:
+                for plataforms in developer['platforms']:
                     plataform_data = {
                         'plataform_id': plataforms['platform']['id'] if 'id' in plataforms['platform'] else None,
                         'plataform_name': plataforms['platform']['name'] if 'name' in plataforms['platform'] else None,
@@ -67,7 +71,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**plataform_data)
                 
-                for stores in developer['stores'] if stores in developer else None:
+                for stores in developer['stores']:
                     stores_data = {
                         'store_id': stores['store']['id'] if 'id' in stores['store'] else None,
                         'store_name': stores['store']['name']if 'name' in stores['store'] else None,
@@ -76,7 +80,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**stores_data)
 
-                for ratings in developer['ratings'] if ratings in developer else None:
+                for ratings in developer['ratings']:
                     ratings_data = {
                         'ratings_id': ratings['id'] if 'id' in ratings else None,
                         'ratings_title': ratings['title'] if 'title' in ratings else None,
@@ -86,7 +90,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**ratings_data)
 
-                for tags in developer['tags'] if tags in developer else None:
+                for tags in developer['tags']:
                     tags_data = {
                         'tags_metacritic_id': tags['id'] if 'id' in tags else None,
                         'tags_metacritic_name': tags['name'] if 'name' in tags else None,
@@ -99,7 +103,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**tags_data)
 
-                for short_screenshots in developer['short_screenshots'] if 'short_screenshots' in developer else None:
+                for short_screenshots in developer['short_screenshots']:
                     short_screenshots_data = {
                         'short_screenshots_id': short_screenshots['id'] if 'id' in short_screenshots else None,
                         'short_screenshots_image': short_screenshots['image'] if 'image' in short_screenshots else None
@@ -107,7 +111,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**short_screenshots_data)
 
-                for parent_plataforms in developer['parent_platforms'] if parent_plataforms in developer else None:
+                for parent_plataforms in developer['parent_platforms']:
                     parent_plataform_data = {
                         'parent_plataforms_id': parent_plataforms['platform']['id'] if 'id' in parent_plataforms['platform'] else None,
                         'parent_plataforms_name': parent_plataforms['platform']['name'] if 'name' in parent_plataforms['platform'] else None,
@@ -116,7 +120,7 @@ async def get_developers_with_id(session: AsyncSession = Depends(conn.get_async_
 
                     developer_with_id_data.update(**parent_plataform_data)
 
-                for genres in developer['genres'] if genres in developer else None:
+                for genres in developer['genres']:
                     genres_data = {
                         'genres_id': genres['id'] if 'id' in genres else None,
                         'genres_name': genres['name'] if 'name' in genres else None,
