@@ -20,18 +20,8 @@ async def get_developers(session: AsyncSession = Depends(conn.get_async_session)
         logger.info('Dados buscados na API')
 
         for developer in response['results']:
-            logger.info('Inserindo dados no banco de dados')
-
-            developer_data = {
-                'developer_id': developer['id'],
-            }
-
-            new_developer = Developers(**developer_data)
-            session.add(new_developer)
-
-        await session.commit()
-        logger.info('Dados inseridos com sucesso')
-        return new_developer
+    
+            return developer
     
     except Exception as e:
         await session.rollback()

@@ -1,27 +1,25 @@
 from pydantic import BaseModel, EmailStr, Field
 
-class UserSchema(BaseModel):
-    fullname: str = Field(...)
-    email: EmailStr = Field(...)
-    password: str = Field(...)
 
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+class TokenData(BaseModel):
+    username: str | None = None
+
+class User(BaseModel):
+    username: str
+    email: str | None = None
+    full_name: str | None = None
+    disabled: bool | None = None
     class Config:
-        schema_extra = {
-            "example": {
-                "fullname": "Abdulazeez Abdulazeez Adeshina",
-                "email": "abdulazeez@x.com",
-                "password": "weakpassword"
-            }
-        }
+        orm_mode = True
 
-class UserLoginSchema(BaseModel):
-    email: EmailStr = Field(...)
-    password: str = Field(...)
 
+
+class UserInDB(User):
+    hashed_password: str
     class Config:
-        schema_extra = {
-            "example": {
-                "email": "abdulazeez@x.com",
-                "password": "weakpassword"
-            }
-        }
+        orm_mode = True
+

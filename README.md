@@ -7,6 +7,7 @@
 * Postgres
 * AWS
 
+
 ## Como executar o projeto
 1. Ir até a pasta do projeto e instale a virtualenv
 
