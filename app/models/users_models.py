@@ -1,15 +1,23 @@
-from sqlalchemy import Integer, Boolean, Date, String, Column
-from database.conn import Base 
-from datetime import datetime
+from sqlalchemy import Column, Integer, String, DateTime,Boolean
+from database.conn import Base
+import datetime
 
+class User(Base):
+    __tablename__ = 'User'
+    id = Column(Integer, primary_key=True)
+    username = Column(String(50),  nullable=False)
+    email = Column(String(100), unique=True, nullable=False)
+    password = Column(String(100), nullable=False)
 
-class Users(Base):
-    __tablename__ = 'Users'
+    def __init__(self, username: str, email: str, password: str):
+        self.username = username
+        self.email = email
+        self.password = password
 
-    id = Column(Integer, primary_key=True, index=True)
-    full_name = Column(String(length=340), nullable=False)
-    username = Column(String(length=120), unique=True, nullable=False)
-    email = Column(String(240), unique=True, nullable=False)
-    hashed_password = Column(String, nullable=False)
-    disabled = Column(Boolean, default=False)
-    created_at = Column(Date, default=datetime.now())
+class TokenTable(Base):
+    __tablename__ = "TokenTable"
+    user_id = Column(Integer)
+    access_toke = Column(String(450), primary_key=True)
+    refresh_toke = Column(String(450),nullable=False)
+    status = Column(Boolean)
+    created_date = Column(DateTime, default=datetime.datetime.now)

@@ -1,25 +1,27 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel
+import datetime
 
-
-class Token(BaseModel):
-    access_token: str
-    token_type: str
-
-class TokenData(BaseModel):
-    username: str | None = None
-
-class User(BaseModel):
+class UserCreate(BaseModel):
     username: str
-    email: str | None = None
-    full_name: str | None = None
-    disabled: bool | None = None
-    class Config:
-        orm_mode = True
+    email: str
+    password: str
 
+class requestdetails(BaseModel):
+    email:str
+    password:str
+        
+class TokenSchema(BaseModel):
+    access_token: str
+    refresh_token: str
 
+class changepassword(BaseModel):
+    email:str
+    old_password:str
+    new_password:str
 
-class UserInDB(User):
-    hashed_password: str
-    class Config:
-        orm_mode = True
-
+class TokenCreate(BaseModel):
+    user_id:str
+    access_token:str
+    refresh_token:str
+    status:bool
+    created_date:datetime.datetime
