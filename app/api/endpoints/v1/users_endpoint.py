@@ -1,4 +1,4 @@
-from app.schemas.user_schema import UserCreate, TokenSchema, requestdetails
+from app.schemas.user_schema import UserCreate, TokenSchema, requestdetails, changepassword
 from app.models.users_models import User, TokenTable
 from database.conn import Base, engine, AnsyncSessionLocal
 from fastapi import FastAPI, Depends, HTTPException, status
@@ -69,3 +69,19 @@ async def getusers(db: AsyncSession = Depends(conn.get_async_session)):
         user: List[UserCreate] = result.scalars().unique().all()
 
         return user
+
+@router.post('/change-password')
+async def change_password(request: changepassword, session: AsyncSession = Depends(conn.get_async_session)):
+    result = await session.execute(select(User).where(User.email == request.email))
+    user = result.scalar()
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="User not found")
+    
+    if not verify_password(request.old_password, user.password):
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Invalid old password")
+    
+    encrypted_password = get_hashed_password(request.new_password)
+    user.password = encrypted_password
+    session.commit()
+    
+    return {"message": "Password changed successfully"}
