@@ -16,34 +16,13 @@ async def upcoming_games(session: AsyncSession = Depends(conn.get_async_session)
     try:
         
         response = api.get_upcoming_games(start_date=start_date, end_date=end_date).json()
-        logger.info('Dados buscados na API')
+        logger.info('Buscando dados na API')
 
         for game in response['results']:
-            logger.info('Inserindo dados no banco de dados')    
-
-            game_data = {
-                'slug_game': game['slug'],
-                'name_game': game['name'],
-                'playtime': game['playtime'],
-            }
-
-            for plataform in game['platforms']:
-                plataform_data = {
-                    'plataform_id': plataform['platform']['id'],
-                    'plataform_name': plataform['platform']['name'],
-                    'plataform_slug': plataform['platform']['slug'],
-                }
-                game_data.update(plataform_data)
-
-            
-            new_platform = UpcomingGames(**game_data)
-            session.add(new_platform)
-            
-        await session.commit()
-        logger.info('Dados inseridos com sucesso')
-        return {'message': 'dados inseridos com sucesso'}
+            logger.success('Sucesso')
+            return game
 
     except Exception as e:
-        print(e)
         await session.rollback()
-        raise HTTPException(status_code=500, detail="Erro interno do servidor", )
+        logger.error(f'Erro ao inserir dados: {e}')
+        return {'message': 'Erro ao inserir dados'}

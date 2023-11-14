@@ -1,27 +1,27 @@
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel
+import datetime
 
-class UserSchema(BaseModel):
-    fullname: str = Field(...)
-    email: EmailStr = Field(...)
-    password: str = Field(...)
+class UserCreate(BaseModel):
+    username: str
+    email: str
+    password: str
 
-    class Config:
-        schema_extra = {
-            "example": {
-                "fullname": "Abdulazeez Abdulazeez Adeshina",
-                "email": "abdulazeez@x.com",
-                "password": "weakpassword"
-            }
-        }
+class requestdetails(BaseModel):
+    email:str
+    password:str
+        
+class TokenSchema(BaseModel):
+    access_token: str
+    refresh_token: str
 
-class UserLoginSchema(BaseModel):
-    email: EmailStr = Field(...)
-    password: str = Field(...)
+class changepassword(BaseModel):
+    email:str
+    old_password:str
+    new_password:str
 
-    class Config:
-        schema_extra = {
-            "example": {
-                "email": "abdulazeez@x.com",
-                "password": "weakpassword"
-            }
-        }
+class TokenCreate(BaseModel):
+    user_id:str
+    access_token:str
+    refresh_token:str
+    status:bool
+    created_date:datetime.datetime
