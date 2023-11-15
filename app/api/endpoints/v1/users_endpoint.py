@@ -1,7 +1,7 @@
 from app.schemas.user_schema import UserCreate, TokenSchema, requestdetails, changepassword
 from app.models.users_models import User, TokenTable
 from app.auth.auth_bearer import JWTBearer
-from app.auth.auth_handler import get_hashed_password, create_access_token,create_refresh_token,verify_password
+from app.auth.auth_handler import get_hashed_password, create_access_token,create_refresh_token,verify_password, token_required
 from fastapi import Depends, HTTPException,status, APIRouter
 from sqlalchemy.ext.asyncio import AsyncSession
 from database import conn
@@ -61,6 +61,7 @@ async def login(request: requestdetails, session: AsyncSession = Depends(conn.ge
     }
 
 
+@token_required
 @router.get('/getusers', response_model=List[UserCreate])
 async def getusers(dependencies=Depends(JWTBearer()), db: AsyncSession = Depends(conn.get_async_session)):
     async with db as session:
@@ -88,6 +89,7 @@ async def change_password(request: changepassword, session: AsyncSession = Depen
     return {"message": "Password changed successfully"}
 
 
+@token_required
 @router.post('/logout')
 async def logout(dependencies=Depends(JWTBearer()), session: AsyncSession = Depends(conn.get_async_session)):
     token = dependencies
