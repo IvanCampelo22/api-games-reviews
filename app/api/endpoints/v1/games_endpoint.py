@@ -14,15 +14,16 @@ api = ApiGames()
 
 @async_session
 @token_required
-@router.get("/developers/", status_code=status.HTTP_200_OK)
-async def get_developers(dependencies=Depends(JWTBearer()), session: AsyncSession = Depends(conn.get_async_session), developer_name: str = ''):
+@router.get("/games/", status_code=status.HTTP_200_OK)
+async def get_games(dependencies=Depends(JWTBearer()), session: AsyncSession = Depends(conn.get_async_session)):
     try:       
-        response = api.get_developers(developer_name).json()
+        response = api.get_games().json()
+        print(response)
         logger.info('Buscando dados na API')
 
-        for developer in response['results']:
+        for games in response['results']:
             logger.success('Sucesso')
-            return developer
+            return games
     
     except Exception as e:
         await session.rollback()
