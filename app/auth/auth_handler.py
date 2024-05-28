@@ -5,6 +5,8 @@ from typing import Union, Any
 from jose import jwt
 from functools import wraps
 from app.models.users_models import TokenTable
+import base64
+import json
 
 ACCESS_TOKEN_EXPIRE_MINUTES = 30  # 30 minutes
 REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7 # 7 days
@@ -57,3 +59,17 @@ def token_required(func):
             return {'msg': "Token blocked"}
         
     return wrapper
+
+def format_jwt(token):
+    """ Transforma JWT que está em base64 para string e coloca dentro de uma lista. Com isso é possível pegar um dado específico do token """
+    token_decode = token.split(".")[1]
+
+    padding = '=' * (4 - len(token_decode) % 4)
+    token_decode += padding
+
+    decoded_bytes = base64.urlsafe_b64decode(token_decode)
+    decoded_str = decoded_bytes.decode('utf-8')
+
+    decoded_payload = json.loads(decoded_str)
+
+    return decoded_payload

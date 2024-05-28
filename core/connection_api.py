@@ -7,11 +7,12 @@ import json
 BASE_URL = os.getenv('BASE_URL_RAWG')
 API_KEY = os.getenv('API_KEY_RAWG')
 
+
 class ApiGames:
     
     def __init__(self) -> None:
-        self.base_url = BASE_URL
-        self.api_key = API_KEY
+        self.base_url = 'https://api.rawg.io/api/'
+        self.api_key = 'b0d3d942a1d44388981df557d759d3a8'
     
     def _make_request(self, method: str, endpoints: str) -> None:
         '''O  method recebe (GET, POST, PUT, DELETE)'''
@@ -50,3 +51,7 @@ class ApiGames:
     def get_developers_with_id(self, start_date='', end_date='', developer_id='') -> None: 
         response = self._make_request('GET', f'games?dates={start_date},{end_date}&developers={developer_id}&key={self.api_key}')
         return response 
+    
+    def api_competitors(developer_name: str) -> None:
+        response = requests.get(f'https://api.rawg.io/api/developers?search={developer_name}&page_size=10&key=b0d3d942a1d44388981df557d759d3a8')
+        return response

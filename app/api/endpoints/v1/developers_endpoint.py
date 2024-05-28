@@ -17,7 +17,7 @@ api = ApiGames()
 @router.get("/developers/", status_code=status.HTTP_200_OK)
 async def get_developers(dependencies=Depends(JWTBearer()), session: AsyncSession = Depends(conn.get_async_session), developer_name: str = ''):
     try:       
-        response = api.get_developers(developer_name).json()
+        response = api.api_competitors(developer_name).json()
         logger.info('Buscando dados na API')
 
         for developer in response['results']:
@@ -26,5 +26,5 @@ async def get_developers(dependencies=Depends(JWTBearer()), session: AsyncSessio
     
     except Exception as e:
         await session.rollback()
-        logger.error(f'Erro ao inserir dados: {e}')
-        return {'message': 'Erro ao inserir dados'}
+        logger.error(f'Erro ao resgatar dados: {e}')
+        return {'message': 'Erro ao resgatar dados'}

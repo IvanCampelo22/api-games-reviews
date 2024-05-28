@@ -1,10 +1,14 @@
 from pydantic import BaseModel
 import datetime
+from typing import Optional
 
 class UserCreate(BaseModel):
     username: str
     email: str
     password: str
+
+    class Config:
+        orm_mode = True
 
 class requestdetails(BaseModel):
     email:str

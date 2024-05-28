@@ -1,6 +1,8 @@
 from sqlalchemy import Column, Integer, String, DateTime,Boolean
+from sqlalchemy.sql.schema import ForeignKey
 from database.conn import Base
 import datetime
+from sqlalchemy.orm import relationship
 
 class User(Base):
     __tablename__ = 'User'
@@ -8,6 +10,8 @@ class User(Base):
     username = Column(String(50),  nullable=False)
     email = Column(String(100), unique=True, nullable=False)
     password = Column(String(100), nullable=False)
+
+    review = relationship('Reviews', back_populates='user')
 
     def __init__(self, username: str, email: str, password: str):
         self.username = username

@@ -4,10 +4,13 @@ from sqlalchemy.orm import sessionmaker
 import sqlalchemy.orm
 import os
 
-USER = os.getenv('USER_GAMES')
-PASSWORD = os.getenv('PASSWORD_GAMES')
-HOST = os.getenv('HOST_GAMES')
-NAME = os.getenv('NAME_GAMES')
+USER = os.getenv('USER_LOCAL')
+PASSWORD = os.getenv('PASSWORD_LOCAL')
+HOST = os.getenv('HOST_LOCAL')
+NAME = os.getenv('NAME_LOCAL_GAMES')
+
+print(USER)
+
 
 SQLALCHEMY_DATABASE_URL = f"postgresql+asyncpg://{USER}:{PASSWORD}@{HOST}/{NAME}"
 
